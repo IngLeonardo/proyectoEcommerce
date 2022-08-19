@@ -1,0 +1,18 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+.nombre-sitio{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.nombre-sitio span{
+    color: #037bc0;
+}
+.sobre-nosotros{
+    background-color: brown;
+    width: 200px;
+    padding: 25px;    
+}
