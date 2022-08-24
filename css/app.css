@@ -4,15 +4,36 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+/* Globales */
+a {
+ text-decoration: none;
+ color: #000000;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/** Header y navegación **/
 .nombre-sitio{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .nombre-sitio span{
     color: #037bc0;
 }
-.sobre-nosotros{
-    background-color: brown;
-    width: 200px;
-    padding: 25px;    
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
 }
+.nav-principal{
+    padding: 20px 0;
+
+}
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+/* ---------------*/
