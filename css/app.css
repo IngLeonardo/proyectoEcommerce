@@ -41,10 +41,11 @@ img{
     background-color: #8cbc00;
     display: block;
     color: #e1e1e1;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 .btn:hover{
     background-color: #769c02;
@@ -53,7 +54,9 @@ img{
 .text-center{
     text-align: center;
 }
-
+.max-width-30{
+    max-width: 30rem;
+}
 
 /*---- Header y navegación - Aplicacion de Flexbox----*/
 .nombre-sitio{
@@ -208,4 +211,63 @@ img{
     margin-top:8rem;
     text-align: center;
     margin-block-end: 0;
+}
+
+/*--Pagina Nosotros--*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 4rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*--Pagina Blog--*/
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+.entrada:last-of-type{
+    border: none;
+}
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-meta p{
+    font-weight: 700;
+}
+.entrada-meta spam{
+    color: #037bc0;
+}
+
+/*--Pagina Entrada-Blog--*/
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/*--Pagina Galeria--*/
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.galeria img{
+    height: 45rem;
+    width: 45rem;
+    object-fit: cover;
 }
